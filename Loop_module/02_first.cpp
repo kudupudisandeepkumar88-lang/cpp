@@ -1,12 +1,16 @@
 #include<iostream>
 using namespace std;
+int sum(int n){
+    if(n==0)
+    return 0;
+    else 
+    return n+sum(n-1);
+}
 int main(){
-    int n,sum=0;
-    cout<<"ENTER NUMBER";
+    int n;
+    cout<<"enter n";
     cin>>n;
-    for(int i=1;i<=n;i++)
-    {
-        sum=sum+i;
-    }
-    cout<<"sum of n numbers"<<sum;
+    sum(n);
+    cout<<"sum=";
+    return 0;
 }
