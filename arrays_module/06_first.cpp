@@ -1,10 +1,9 @@
 #include<iostream>
 using namespace std;
 int main(){
-    for(int i=1;i<=4;i++){
-        for(int j=i;j<=4;j++){
-            cout<<"* ";
-        }
-        cout<<endl;
+    int arr[5]={1,2,3,4,5},n,sum=0;
+    for(int i=0;i<5;i++){
+        sum=sum+arr[i];
     }
+     cout<<sum;
 }
